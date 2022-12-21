@@ -18,6 +18,7 @@ Complete Back-end for a social-networking application
 * [Deployed Site](#deployed-site)
 
 ## Installation
+You can clone the repo into your local machine and do npm i.
 Please download the following packages:
 "express": "^4.18.2",
 "mongoose": "^6.7.0"

@@ -2,6 +2,7 @@ const { Schema, model, Types } = require("mongoose");
 const { stringify } = require("querystring");
 const dateFormat = require("../utils/dateFormat");
 
+// ReactionSchema under Thought model only
 const ReactionSchema = new Schema({
   reactionId: {
     type: Schema.Types.ObjectId,

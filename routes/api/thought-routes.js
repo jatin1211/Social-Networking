@@ -1,4 +1,6 @@
 const router = require("express").Router();
+
+// thought routes
 const {
     getAllThoughts,
     getThoughtById,
@@ -9,11 +11,11 @@ const {
     removeReaction
 } = require("../../controllers/thought-controller");
 
-// /api/comments/<pizzaId>
+// endpoints for thought routes
 router.route("/").get(getAllThoughts).post(createThought);
 router.route("/:id").get(getThoughtById).put(updateThought).delete(deleteThought);
 
-
+// endpoints for reaction routes
 router.route('/:thoughtId/reactions')
 .post(addReaction)
 .delete(removeReaction)

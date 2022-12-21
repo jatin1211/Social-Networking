@@ -1,6 +1,8 @@
 const { Schema, model, Types } = require("mongoose");
 const { stringify } = require("querystring");
 const dateFormat = require("../utils/dateFormat");
+
+// regular expression to validate email address
 var validateEmail = function(email) {
   var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   return re.test(email)
